@@ -1,0 +1,23 @@
+
+/*----------------------------------------
+  Back to top button
+------------------------------------------*/
+.backtotop{
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    z-index: 998;
+    -webkit-backface-visibility: hidden;
+}
+[data-footer_menu="hide"] .backtotop{
+  bottom: 20px;
+}
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 

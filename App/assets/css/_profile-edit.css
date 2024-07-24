@@ -1,0 +1,43 @@
+
+/*----------------------------------------
+  Edit Profile
+----------------------------------------*/
+.editprof-img{
+  text-align: center;
+  position: relative;
+}
+.editprof-img .img-wrap{
+  text-align: center;
+  display: inline-block;
+  width: auto;
+  position: relative;
+}
+.editprof-img img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  padding: 4px;
+  cursor: pointer;
+}
+.editprof-img i{
+  position: absolute;
+  right: 25px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+/*----------------------------------------
+  Site - Dark Mode - Edit Profile
+----------------------------------------*/
+[data-site_mode="dark"] .editprof-img i{
+    background-color: var(--dark-800);
+}
+[data-site_mode="dark"] .editprof-img img{
+  border: 1px solid var(--dark-700);
+}

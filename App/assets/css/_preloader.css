@@ -1,0 +1,84 @@
+
+/*----------------------------------------
+  Preloader
+------------------------------------------*/
+/* #preloader:after{
+  border-top-color: #80CBC4;
+}
+#preloader:before{
+  border-top-color: rgba(var(--accent-rgb), 1);;
+}
+#preloader{
+  border-top-color: rgba(var(--primary-rgb), 1);
+}
+ */
+
+
+
+/*----------------------------------------
+  type 4
+------------------------------------------*/
+
+.preloader-wrapper{
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes rot_orig {
+  from {
+    transform: rotate(0deg) translate(0, -3rem) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(0, -3rem) rotate(-360deg);
+  }
+}
+@keyframes rot_alt1 {
+  0% {
+    transform: rotate(55deg) translate(0, 0rem) rotate(55deg);
+  }
+  50% {
+    transform: rotate(165deg) translate(-2rem, 0rem) rotate(165deg);
+  }
+  100% {
+    transform: rotate(55deg) translate(0, 0rem) rotate(55deg);
+  }
+}
+@keyframes rot_alt2 {
+  from {
+    transform: rotate(720deg) translate(0, -3rem) rotate(180deg);
+  }
+  to {
+    transform: rotate(720deg) translate(0, 3rem) rotate(-720deg);
+  }
+}
+
+.preloader-wrapper .dot {
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+.preloader-wrapper .dot.orig {
+  animation: rot_orig 1.5s infinite ease-in-out;
+}
+
+.preloader-wrapper .dot.one {
+  animation-delay: 0s;
+  border-color: var(--primary-color);
+}
+.preloader-wrapper .dot.two {
+  animation-delay: 100ms;
+  border-color: var(--accent-color);
+}
+.preloader-wrapper .dot.three {
+  animation-delay: 200ms;
+  border-color: rgba(var(--primary-filter),.3);
+} 
+
+/* .preloader-wrapper .dot.four {
+  animation-delay: 300ms;
+  border-color: #F19584;
+} */
+

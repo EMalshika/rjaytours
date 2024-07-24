@@ -1,0 +1,28 @@
+
+/*----------------------------------------
+  Carousel Home Screen
+------------------------------------------*/
+.fullfixed{
+  position: relative;
+  z-index: 1;
+}
+.welcome-logo.index-welcome{
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+}
+.index-start{
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+}
+.index-start .btn-large{
+  width: 80%;
+  margin: 0 10%;
+}
+.fullfixed.index-carousel .carousel.carousel-fullscreen .indicators{
+  bottom: 110px;
+}

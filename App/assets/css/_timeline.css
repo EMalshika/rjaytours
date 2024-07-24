@@ -1,0 +1,80 @@
+/*----------------------------------------
+  Timeline
+------------------------------------------*/
+
+.timeline {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.timeline .verline {
+	position: absolute;
+	height: 100%;
+	width: 5px;
+	background-color: #dddddd;
+	left: 16%;
+}
+.timeline .event {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.timeline .event .date {
+	display: block;
+	float: left;
+	width: 16%;
+	height: auto;
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	/* text-transform: uppercase; */
+}
+.timeline .event .date:after {
+	content: " ";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	right: -10px;
+	top: 50%;
+	margin-top: 0px;
+	background-color: #dddddd;
+}
+.timeline .event .date:before {
+	content: " ";
+	position: absolute;
+	width: 80%;
+	height: 5px;
+	right: -80%;
+	top: 50%;
+	margin-top: 4px;
+	background-color: #dddddd;
+}
+.timeline .event .card-panel {
+	width: 74%;
+	position: relative;
+	margin-left: 24%;
+	float: left;
+}
+.timeline .event h4 {
+	margin-bottom: 0px;
+}
+
+.timeline .card-panel.has-image{
+	padding: 0px 0 0px 0;
+}
+.timeline .card-panel.has-image img{
+	border-radius: 10px 10px 0 0;
+}
+.timeline .card-panel.has-image .msg{
+	padding: 10px 24px 15px 24px;
+}
+
+/*----------------------------------------
+  Site - Dark Mode - Timeline
+----------------------------------------*/
+[data-site_mode="dark"] .timeline .verline,
+[data-site_mode="dark"] .timeline .event .date:before,
+[data-site_mode="dark"] .timeline .event .date:after {
+	background-color: var(--dark-700);
+}

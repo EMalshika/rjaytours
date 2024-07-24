@@ -1,0 +1,28 @@
+/*----------------------------------------
+  Navigation Menu - Colored Style
+------------------------------------------*/
+[data-menu="colored"] .sidenav{
+  background-color: var(--primary-color);
+}
+[data-menu="colored"] .sidenav .subheader{
+  color: #eeeeee;
+}
+[data-menu="colored"] .sidenav li a, [data-menu="colored"] .sidenav li a:hover, [data-menu="colored"] .sidenav li a:hover i{
+  color: #f5f5f5;
+}
+[data-menu="colored"] .sidenav li.lvl1 .waves-effect.active,
+[data-menu="colored"] .sidenav li.lvl1 .waves-effect:hover{
+  background-color: rgba(33,33,33,.2); 
+}
+[data-menu="colored"] .sidenav .badge.blue-grey{
+  background-color: rgba(33,33,33,.4) !important; 
+}
+[data-menu="colored"] .sidenav .divider{
+  background-color: rgba(33,33,33,.2); 
+}
+[data-menu="colored"] .sidenav .copyright{
+  color: #eeeeee;
+}
+[data-menu="colored"] .menu-close i{
+  color: #f5f5f5;
+}

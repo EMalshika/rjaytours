@@ -1,0 +1,75 @@
+/*----------------------------------------
+  Portfolio
+------------------------------------------*/
+.row.ui-mediabox.fullwidth {
+	margin-bottom: 0px;
+}
+.ui-mediabox.fullwidth .col {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+.row.ui-mediabox {
+	margin: 0 -0.75rem;
+}
+.row.ui-mediabox.team-box,
+.row.ui-mediabox.fullwidth {
+	margin: 0px;
+}
+.row.ui-mediabox.circular img {
+	border-radius: 50%;
+}
+.port-data {
+	text-align: center;
+}
+
+.ui-mediabox.fullwidth .port-data {
+	padding: 0 30px;
+}
+.port-data a h4,
+.port-data a h5 {
+	color: var(--dark-700);
+}
+
+/*boxed*/
+.ui-mediabox.port-boxed .img-wrap:not(.circle):after,
+.ui-mediabox.port-boxed .img-wrap:not(.circle),
+.ui-mediabox.port-boxed .img-wrap:not(.circle) img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.ui-mediabox.port-boxed .img-wrap img{
+	display: inline-block;
+}
+.port-data.boxed {
+	background: #fff;
+	padding: 5px 10px 15px 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	/* margin-bottom: 30px; */
+}
+.ui-mediabox.circular .port-data.boxed,
+.ui-mediabox.fullwidth .port-data.boxed {
+	background: #fff;
+	padding: 5px 10px 15px 10px;
+	margin-bottom: 30px;
+}
+.ui-mediabox.circular .port-data.boxed {
+	padding-top: 80px;
+	margin-top: -80px;
+}
+
+
+
+/*----------------------------------------
+  Site - Dark Mode - Portfolio
+----------------------------------------*/
+[data-site_mode="dark"] .port-data a h4,
+[data-site_mode="dark"] .port-data a h5 {
+	color: #f5f5f5;
+}
+
+[data-site_mode="dark"] .ui-mediabox.circular .port-data.boxed, 
+[data-site_mode="dark"] .ui-mediabox.fullwidth .port-data.boxed,
+[data-site_mode="dark"] .port-data.boxed {
+	background: var(--dark-800);
+}

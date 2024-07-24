@@ -1,0 +1,32 @@
+/*----------------------------------------
+  Parallax
+------------------------------------------*/
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+.parallax-grid .parallax-container {
+  min-height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.parallax-item{
+  border-radius: 10px;
+}
+.parallax-item h5{
+  padding: 0px 15px 15px 15px;
+}
+
+.row.parallax-grid{
+  margin: 0 -0.75rem;
+}
+/* [data-site_mode="dark"] .parallax-item h5{
+	background-color: var(--dark-700);
+} */

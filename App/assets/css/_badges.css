@@ -1,0 +1,26 @@
+/*----------------------------------------
+  Badges
+------------------------------------------*/
+.badge-rounded {
+  border-radius: 22px !important;
+}
+span.badge.new {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+  min-width: auto;
+  line-height: 20px;
+}
+span.badge.new:after{
+  content: "";
+}
+/*----------------------------------------
+  Site - Dark Mode - Badge
+----------------------------------------*/
+[data-site_mode='dark'] .dropdown-content .badge,
+[data-site_mode='dark'] .collapsible-header .badge,
+[data-site_mode='dark'] .collection span.badge {
+  color: #f5f5f5;
+}

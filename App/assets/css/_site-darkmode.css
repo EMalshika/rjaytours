@@ -1,0 +1,27 @@
+/*----------------------------------------
+  Site - Dark Mode
+----------------------------------------*/
+body[data-site_mode="dark"]  {
+    color: #eeeeee;
+    background-color: var(--dark-900);
+}
+body[data-site_mode="dark"] .preloader-background{
+  background-color: var(--dark-900);
+}
+[data-menu="dark"] .ui-mediabox .divider,
+[data-site_mode="dark"] .container .divider {
+    background-color: var(--dark-700);
+}
+[data-site_mode="dark"] .subpages .collection-item a{
+  color: #CFD8DC;
+}
+[data-site_mode="dark"] .collection.subpages .collection-item {
+    border-bottom: 1px solid var(--dark-800);
+    background-color: transparent;
+}
+[data-site_mode="dark"] .collection.subpages .collection-item:hover {
+    background: transparent;
+}
+[data-site_mode="dark"] .collection.subpages{
+  border: 0px solid var(--dark-700);
+}

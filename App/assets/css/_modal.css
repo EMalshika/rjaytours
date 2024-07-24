@@ -1,0 +1,68 @@
+/*----------------------------------------
+  Modal
+------------------------------------------*/
+.modal{
+	border-radius: 10px;
+}
+.modal-content {
+	border-bottom: 1px solid rgba(220, 220, 220, 0.4);
+}
+.modal.dark-text .modal-content,
+.modal.dark-text .modal-content a {
+	color: var(--dark-600);
+}
+.modal-footer.dark-text,
+.modal-footer.dark-text a {
+	color: var(--dark-600);
+}
+.modal-footer.white-text a {
+	color: #fafafa;
+}
+
+.modal-mediabox .modal-content {
+	padding: 0px;
+	border-bottom: 0px;
+	height: auto;
+}
+.modal-mediabox .modal-footer {
+	text-align: left;
+	height: auto;
+	padding: 0 15px;
+}
+
+.modal-mediabox .modal-content p {
+	margin: 0;
+}
+
+.modal.bottom-sheet{
+	max-height: 75%;
+}
+
+.modal.full{
+	height: 100% !important;
+	max-height: 100% !important;
+	width: 100%;
+	border-radius: 0px;
+	top: 0 !important;
+}
+
+
+body.modal-open .addbutton, body.modal-open .backtotop{
+	display: none !important;
+}
+
+[data-footer_menu="show"] .modal.bottom-sheet .modal-content{
+	padding-bottom: 80px;
+}
+
+
+/*----------------------------------------
+  Site - Dark Mode - Modal
+----------------------------------------*/
+[data-site_mode="dark"] .modal .modal-footer,
+[data-site_mode="dark"] .modal {
+	background-color: var(--dark-700);
+}
+[data-site_mode="dark"] .modal-content {
+	border-bottom: 1px solid rgba(33, 33, 33, .2);
+}

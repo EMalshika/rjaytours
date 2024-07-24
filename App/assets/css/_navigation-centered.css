@@ -1,0 +1,93 @@
+
+
+/*----------------------------------------
+  Navigation Menu - Centered 
+------------------------------------------*/
+
+[data-menu_type="center"] .sidemenu{
+  width: 100%;
+}
+[data-menu_type="center"] .sidenav.sidemenu li.lvl1 a:after{
+  display: none;  
+}
+[data-menu_type="center"] .sidemenu .sh-wrap{
+  display: none;
+}
+[data-menu_type="center"] .sidemenu .lvl1{
+  width: 32%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin-right: 1%;
+  position: relative;
+  margin-bottom: 15px;
+}
+[data-menu_type="center"] .sidemenu.sidenav li.lvl1 .waves-effect{
+    padding-left: 0px;
+}
+[data-menu_type="center"] .sidemenu .lvl1 a{
+  padding: 15px 0 5px 0;
+  white-space: nowrap;
+}
+[data-menu_type="center"] .sidemenu .lvl1 i{
+  display: block;
+  width: 100%;  
+  font-size: 30px;
+}
+[data-menu_type="center"] .sidemenu .lvl1 .title{
+  display: block;
+  width: 100%;  
+  line-height: 42px;
+}
+[data-menu_type="center"] .sidemenu .lvl1 .badge{
+  display: none;
+}
+[data-menu_type="center"] .sidemenu .sep-wrap{
+  display: none;
+}
+[data-menu_type="center"] .sidemenu .copy-wrap{
+display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+[data-menu_type="center"] .sidemenu .menulinks{
+  display: inline-block;
+  position: relative;
+  margin-top: 0px;
+  padding-left: 7px;
+}
+[data-menu_type="center"] .sidemenu .copy-spacer{
+  display: block;
+  width: 100%;
+  height: 1px;
+  clear: both;
+}
+[data-menu_type="center"] .sidemenu .user-wrap{
+  text-align: center;
+}
+[data-menu_type="center"] .sidemenu.sidenav .user-view .imgarea{
+  width: 65px;
+}
+[data-menu_type="center"] .sidemenu.sidenav .user-view{
+    display: inline-block;
+    width: 292px;
+    text-align: left;
+}
+.menu-close{
+  display: none;
+}
+[data-menu_type="center"] .menu-close{
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 5px;  
+  cursor: pointer;
+}
+[data-menu_type="center"] .menu-close i{
+  font-size: 20px;
+}

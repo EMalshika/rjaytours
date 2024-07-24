@@ -1,0 +1,17 @@
+
+/*----------------------------------------
+  Welcome page
+----------------------------------------*/
+.welcome-logo i{
+  font-size: 34px;
+  margin-right: 8px;
+}
+.facebook{
+    background-color: #3b5998 !important;
+}
+.twitter{
+    background-color: #00ACEE !important;
+}
+.google{
+    background-color: #dd4b39 !important;
+}

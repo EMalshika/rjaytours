@@ -1,0 +1,27 @@
+
+/*----------------------------------------
+  Drop Down
+------------------------------------------*/
+.dropdown-content li>a, .dropdown-content li>span{
+  color: var(--dark-700);
+}
+.dropdown-content li>a>i{
+  margin: 0 10px 0 0;
+}
+.dropdown-content{
+  border-radius: 10px;
+}
+/*----------------------------------------
+  Site - Dark Mode - Dropdown
+----------------------------------------*/
+[data-site_mode="dark"] .dropdown-content{
+  background-color: var(--dark-800);
+}
+[data-site_mode="dark"] .dropdown-content li>a, 
+[data-site_mode="dark"] .dropdown-content li>span{
+  color: #f5f5f5;
+}
+[data-site_mode="dark"] .dropdown-content li:hover, 
+[data-site_mode="dark"] .dropdown-content li.active {
+    background-color: rgba(33,33,33,0.25);
+}

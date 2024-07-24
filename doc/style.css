@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/********************************
+Fonts css
+********************************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900|Poppins:300,400,400i,500,600,700,800,900&display=swap');
+body {
+	background-color: #FFFFFF;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
+	color: #1A1A1A;
+}
+p {
+	line-height: 1.6;
+	margin: 0 0 20px;
+}
+img {
+	width: auto;
+	max-width: 100%;
+	vertical-align: top;
+}
+a{ 
+	color:#1EC8E7; 
+	text-decoration:none;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+a:hover,
+a:focus,
+a:active { 
+	color: #005294;
+}
+strong {
+	font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #101010;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 0 15px;
+}
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 23px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 14px;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: inherit;
+}
+ul, 
+ol {
+	margin: 0 0 20px 30px;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+/********************************
+general css
+********************************/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+/*----------------------------------------------------------------------*/
+/* Sidebar
+/*----------------------------------------------------------------------*/
+.logo-section {
+	text-align: center;
+}
+.logo-section a{
+	display: inline-block;
+	line-height: 1;
+}
+.doc-sidebar {
+    position: fixed;
+	background: #005294;
+    width: 25%;
+    height: 100%;
+    top: 0;
+}
+.doc-navigation .logo-section img {
+	max-width: 250px;
+}
+.doc-navigation ul {
+	margin: 0;
+	padding: 0;
+}
+.doc-navigation ul li {
+	list-style: none;
+}
+.doc-navigation ul a {
+	color: #FFFFFF;
+	display: block;
+	padding: 12px 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	transition: all 0.3s ease 0s;
+}
+.doc-navigation ul a:hover {
+	background-color: #FFFFFF;
+	color: #313131;
+}
+.doc-navigation ul a.mPS2id-highlight {
+	background-color: #FFFFFF;
+	color: #313131;
+}
+.doc-navigation ul li:last-child a {
+	border-bottom: 0;
+}
+
+/*----------------------------------------------------------------------*/
+/* Content
+/*----------------------------------------------------------------------*/
+.doc-content {
+	width: 75%;
+	padding: 30px;
+	margin-left: 25%;
+}
+.doc-content > [class*="-content"] {
+	border: 1px solid #e6e6e6;
+	margin-bottom: 60px;
+	padding: 60px;
+}
+.doc-content .highlight-content {
+	border: none;
+	padding: 0;
+}
+.structure-content .doc-structure {
+	background-color: #F8F8F8;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+.structure-content .doc-structure:last-child {
+	margin-bottom: 0;
+}
+.doc-content ul li {
+	margin-bottom: 10px;
+}
+.doc-content img {
+	margin-bottom: 20px;
+}
+.doc-content .highlight-title {
+	background-color: #F56960;
+	color: #FFFFFF;
+	display: inline-block;
+	margin-bottom: 30px;
+	padding: 8px 30px;
+}
+
+code[class*="language-"], 
+pre[class*="language-"] {
+	background-color: #272822;
+    color: white;
+    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+code[class*="language"] {
+    background: inline-black;
+    padding: 0px 15px;
+    display: block;
+    overflow: auto;
+    float: left;
+    margin-bottom: 0;
+}
+pre[class*="language-"] {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+}
+code[class*="language"] span {
+	display: inline-block;
+}
+.language-markup {
+	margin-bottom: 20px;
+}
+.displat-block {
+	display: block;
+}

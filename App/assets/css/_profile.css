@@ -1,0 +1,99 @@
+/*----------------------------------------
+  Profile Page
+------------------------------------------*/
+.ui-profile{
+  position: relative;
+  vertical-align: top;
+}
+.ui-profile .primg{
+  height: 500px;
+  background-image: url("../images/profile.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.profile-card .ui-profile .primg
+{
+  height: 350px;
+}
+.profile-card{
+  padding-bottom: 24px !important;
+}
+
+.ui-profile .primg img{
+  width: 100%;
+  z-index: 2;
+}
+.ui-profile .prinfo{
+  position: relative;
+  width: 90%;
+  padding: 15px;  
+  margin: -120px 5% 0 5%;
+  display: inline-block;
+  z-index: 4;
+  text-align: center;
+}
+.ui-profile .pos{
+  font-size: 90%;
+}
+.ui-profile .prinfo .count{
+  float: left; 
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+}
+.ui-profile .profile-btn{
+  margin-bottom: 10px;
+}
+.ui-profile .prinfo .num, .ui-profile .prinfo .tit{ 
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+.ui-profile .prinfo .tit{
+  font-size: 80%;
+}
+.ui-profile .prname{
+    position: relative;
+    /* margin: -170px 10% 70px 10%; */
+    z-index: 3;
+}
+.ui-profile .prname .name{
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.ui-profile .carousel-basic{
+  height: 200px;
+  /* margin-left: -70px; */
+  width: 100%;
+  overflow: visible;
+}
+.ui-profile .carousel-basic .carousel-item{
+  height: 167px;
+}
+.ui-profile .carousel-basic .indicators{
+  bottom: 20px;
+}
+.ui-profile .pr-ctit{
+    margin-top: -85px;
+    z-index: 2;
+    padding: 0px 0px 0px 15px;
+    position: relative;
+}
+.ui-profile .pr-ctit h6{
+  margin-bottom: 0px;
+}
+.primg{
+  display: inline-block;
+  position: relative;
+}
+.primg:after{
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}

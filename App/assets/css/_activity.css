@@ -1,0 +1,36 @@
+.collection.activity .collection-item.avatar .img-wrap img{
+  position: relative;
+  top: 0px;
+}
+.collection.activity .collection-item .media{
+  display: inline-block;
+  padding: 0 25px 15px 75px;
+}
+
+.collection.activity .collection-item .media .actions a{
+  margin: 15px 10px 5px 5px;
+  display: inline-block;
+
+}
+.collection.activity .collection-item .media .actions a span{
+  position: relative;
+  top: -2px;
+}
+.collection.activity .collection-item .media .actions a i{
+  font-size: 18px;
+  color: var(--primary-color);
+}
+.collection.activity .collection-item .media textarea.materialize-textarea{
+  min-height: 40px;
+}
+.collection.activity .collection-item .media .input-field{
+  margin: 10px 0 10px 0;
+}
+.collection.activity .collection-item.avatar p{
+  font-size: 100%;
+  margin-top: 5px;
+}
+
+[data-site_mode="dark"] .activity .media .input-field.col, [data-site_mode="dark"] .activity .media .input-field {
+  background-color: var(--dark-700);
+}

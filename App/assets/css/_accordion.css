@@ -1,0 +1,111 @@
+
+/*----------------------------------------
+ Accordion
+------------------------------------------*/
+.collapsible.transparent{
+  border: none;
+  /* border-top: 1px solid #ddd; */
+  border: 1px solid rgba(50, 50, 50, .07);
+}
+.collapsible.transparent .collapsible-header{
+  background-color: transparent;
+}
+.collapsible.colored{
+  border: none;
+}
+.collapsible.colored li:last-child .collapsible-header{
+  border-bottom: none;
+}
+.collapsible .collapsible-header.primary-bg, .collapsible .collapsible-header.primary-bg:focus{
+  background-color: var(--primary-color);
+}
+.collapsible .collapsible-header.accent-bg, .collapsible .collapsible-header.accent-bg:focus{
+  background-color: var(--accent-color);
+}
+.collapsible-header{
+  position: relative;
+}
+.collapsible-header:after{
+    content: "\F140";
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    right: 15px;
+    font-size: 17px;
+    opacity: 0.7;
+}
+.active .collapsible-header:after{
+    content: "\F143";
+}
+
+.collapsible,
+.collapsible li,
+.collapsible-body,
+.collapsible-header{
+  border-radius: 10px;
+}
+
+.collapsible-header i {
+  width: 36px;
+  font-size: 16px;
+  display: inline-block;
+  background: var(--primary-color);
+  border-radius: 50%;
+  height: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.collapsible-header {
+  line-height: 36px;
+  font-size: 17px;
+  padding: 12px 15px;
+  border: none;
+}
+
+.collapsible-header,
+.collapsible li{
+  box-shadow: 0px -1px 5px rgba(0, 0, 0, .1);
+}
+.collapsible.transparent .collapsible-header,
+.collapsible.transparent li{
+  box-shadow: 0px -1px 3px rgba(0, 0, 0, .1);
+}
+
+
+.collapsible,
+.collapsible-body{
+  border: none;
+}
+.collapsible.transparent .collapsible-header, .collapsible.transparent .collapsible-body,
+body .collapsible, body .collapsible.colored{
+  box-shadow: none;
+  border: none;
+}
+
+.collapsible.colored .collapsible-header i {
+  background: rgba(0, 0, 0, .2);
+}
+
+.collapsible .img{
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/*----------------------------------------
+  Site - Dark Mode - collapsible
+----------------------------------------*/
+[data-site_mode="dark"] .collapsible-header,
+[data-site_mode="dark"] .collapsible-header:focus{
+  background-color: var(--dark-800);
+  color: #f5f5f5;
+  border-color: var(--dark-700);
+}
+[data-site_mode="dark"] .collapsible-body,
+[data-site_mode="dark"] .collapsible{
+  border-color: var(--dark-700);
+}

@@ -1,0 +1,25 @@
+
+/*----------------------------------------
+  Navigation Menu - Dark Style
+------------------------------------------*/
+[data-menu="dark"] .sidenav{
+  background-color: var(--dark-800);
+}
+[data-menu="dark"] .sidenav .subheader{
+  color: #B0BEC5;
+}
+[data-menu="dark"] .sidenav li a, [data-menu="dark"] .sidenav li a:hover{
+  color: #CFD8DC;
+}
+[data-menu="dark"] .sidenav li.lvl1 .waves-effect:hover, [data-menu="dark"] .sidenav li.lvl1 .waves-effect.active{
+  background-color: var(--dark-900); 
+}
+[data-menu="dark"] .sidenav .badge.blue-grey{
+  background-color: var(--primary-color) !important; 
+}
+[data-menu="dark"] .sidenav .divider{
+  background-color: var(--dark-700); 
+}
+[data-menu="dark"] .sidenav .copyright{
+  color: #B0BEC5;
+}
