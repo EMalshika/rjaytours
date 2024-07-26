@@ -78,7 +78,7 @@ $('.testimonial-slider').slick({
 
 $(window).scroll(function() {
   /* back to top */
-  if ($(this).scrollTop() > 300) {
+  if ($(this).scrollTop() >= 0) {
     $('#backTotop').fadeIn(200);
   } else {
     $('#backTotop').fadeOut(200);
