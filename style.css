@@ -8447,3 +8447,26 @@ product checkout css
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*.tripa{
+  text-align: center;
+  align-self: center;
+}*/
+.tripa .widSSPBranding{
+  display: none;
+}
+.tripa .widSSPSummary{
+  display: none;
+}
+.tripa .widWRLBranding{
+  display: none;
+}
+.tripa .border {
+  border: 1px solid #FFFFFF!important;
+}
+.tripa .widSSPAll{
+  display: none;
+}
+.tripa .widWRLLink{
+  display: none;
+}
