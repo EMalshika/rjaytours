@@ -1115,7 +1115,7 @@ input[type=submit]:focus {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 70px;
+  width: 150px;
 }
 
 .social-links ul {
