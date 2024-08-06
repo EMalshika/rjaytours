@@ -1245,8 +1245,8 @@ input[type=submit]:focus {
 }
 @media screen and (max-width: 575px) {
   .to-top-icon {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     line-height: 25px;
     font-size: 13px;
     right: 10px;
