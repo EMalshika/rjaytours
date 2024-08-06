@@ -1239,10 +1239,10 @@ input[type=submit]:focus {
   -o-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
-.to-top-icon:hover {
+/*.to-top-icon:hover {
   background-color: #000000;
   color: #ffffff;
-}
+}*/
 @media screen and (max-width: 575px) {
   .to-top-icon {
     width: 100px;
