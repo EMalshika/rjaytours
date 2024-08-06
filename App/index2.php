@@ -135,8 +135,8 @@
                     <option>Anuradhapura</option>
                     <option>Arugambay</option>
                     <option>Benthota</option>
-                    <option>BIA</option>
                     <option>Colombo airport (BIA)</option>
+                    <option>Colombo</option>
                     <option>Dambulla</option>
                     <option>Dikwella</option>
                     <option>Ella</option>
@@ -194,7 +194,7 @@
                 </div>
 
                 <!-- select with optgroups -->
-                <div class="input-field sel-wrap col s12">
+                <!--<div class="input-field sel-wrap col s12">
                   <select name="vehicle">
                     <option>Choose Vehicle</option>
                     <option>Flex car</option>
@@ -202,7 +202,7 @@
                     <option>Van</option>
                   </select>
                   <label>Select Vehicle</label>
-                </div>
+                </div>-->
 
               </div>
 
@@ -227,12 +227,12 @@
                 <!--<p id="ndistance"></p>-->
               </div>
 
-              <div class="row">
+              <!--<div class="row">
                 <div class="input-field col s12">
                   <input id="nprice" type="text" class="validate">
                   <label for="first_name1">Price</label>
                 </div>
-              </div>
+              </div>-->
 
               <div class="row">
                 <div class="input-field col s4" style="border-radius: 10px 0px 0px 10px;  min-width:120px; min-height:103px;">
@@ -242,7 +242,7 @@
                 </div>
                 <div class="input-field col s7" style="border-radius: 0px 10px 10px 0px;">
                     <p style="margin-left:10px;">Flex 2-3 persons</p>
-                    <p style="margin-left:10px;">Rs.6000/=</p>
+                    <p style="margin-left:10px;" id="flexprice">Rs.0/=</p>
                 </div>
                 <!--<div class="input-field col s4">
                   <center>
@@ -265,7 +265,7 @@
                 </div>
                 <div class="input-field col s7" style="border-radius: 0px 10px 10px 0px;">
                     <p style="margin-left:10px;">Sedan 2-4 persons</p>
-                    <p style="margin-left:10px;">Rs.6000/=</p>
+                    <p style="margin-left:10px;" id="sedanprice">Rs.0/=</p>
                 </div>
               </div>
               <div class="row">
@@ -276,7 +276,7 @@
                 </div>
                 <div class="input-field col s7" style="border-radius: 0px 10px 10px 0px;">
                     <p style="margin-left:10px;">Van 4-7 persons</p>
-                    <p style="margin-left:10px;">Rs.6000/=</p>
+                    <p style="margin-left:10px;" id="vanprice">Rs.0/=</p>
                 </div>
               </div>
             </div>
@@ -305,13 +305,10 @@
       $distance = $row["distance"];
     }
 
-    if ($vehicle == "Flex car") {
-      $price = $distance * 125;
-    }elseif ($vehicle == "Sedan") {
-      $price = $distance * 150;
-    }elseif ($vehicle == "Van") {
-      $price = $distance * 200;
-    }
+    $flexprice = $distance * 125;
+    $sedanprice = $distance * 150;
+    $vanprice = $distance * 200;
+    
 
     /*?>
     <script>alert("<?php echo $price; ?>");</script>
@@ -321,7 +318,9 @@
     <script>
     document.getElementById("nlocation").value = "<?php echo 'Location :-'.' '. $startlocation.' '. 'to'.' '.$endlocation; ?>";
     document.getElementById("ndistance").value = "<?php echo 'Distance :-'.' '. $distance.' '.'Km'; ?>";
-    document.getElementById("nprice").value = "<?php echo 'Rs.'.' '. $price.' '.'/='; ?>";
+    document.getElementById("flexprice").innerHTML = "<?php echo 'Rs.'.' '. $flexprice.' '.'/='; ?>";
+    document.getElementById("sedanprice").innerHTML = "<?php echo 'Rs.'.' '. $sedanprice.' '.'/='; ?>";
+    document.getElementById("vanprice").innerHTML = "<?php echo 'Rs.'.' '. $vanprice.' '.'/='; ?>";
     </script>
     <?php
 
