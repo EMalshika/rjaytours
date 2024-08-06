@@ -136,7 +136,7 @@
                     <option>Arugambay</option>
                     <option>Benthota</option>
                     <option>BIA</option>
-                    <option>Colombo airport (BIA)</option>
+                    <option>Colombo</option>
                     <option>Dambulla</option>
                     <option>Dikwella</option>
                     <option>Ella</option>
@@ -171,7 +171,7 @@
                     <option>Anuradhapura</option>
                     <option>Arugambay</option>
                     <option>Benthota</option>
-                    <option>Colombo airport (BIA)</option>
+                    <option>BIA</option>
                     <option>Colombo</option>
                     <option>Dambulla</option>
                     <option>Dikwella</option>
@@ -215,7 +215,6 @@
                 <div class="input-field col s12">
                   <input id="nlocation" type="text" class="validate">
                   <label for="first_name1">Location</label>
-                  <!--<p id="nlocation"></p>-->
                 </div>
               </div>
 
@@ -224,59 +223,12 @@
                   <input id="ndistance" type="text" class="validate">
                   <label for="first_name1">Distance</label>
                 </div>
-                <!--<p id="ndistance"></p>-->
               </div>
 
               <div class="row">
                 <div class="input-field col s12">
                   <input id="nprice" type="text" class="validate">
                   <label for="first_name1">Price</label>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-field col s4" style="border-radius: 10px 0px 0px 10px;  min-width:120px; min-height:103px;">
-                  <center>
-                    <img src="flexcar.png" width="80px" height="60px">
-                  </center>
-                </div>
-                <div class="input-field col s7" style="border-radius: 0px 10px 10px 0px;">
-                    <p style="margin-left:10px;">Flex 2-3 persons</p>
-                    <p style="margin-left:10px;">Rs.6000/=</p>
-                </div>
-                <!--<div class="input-field col s4">
-                  <center>
-                    <img src="flexcar.png" width="80px" height="60px">
-                    <p>Sedan 2-4 persons</p>
-                  </center>
-                </div>
-                <div class="input-field col s4">
-                  <center>
-                    <img src="flexcar.png" width="80px" height="60px">
-                    <p>Van 4-7 persons</p>
-                  </center>
-                </div>-->
-              </div>
-              <div class="row">
-                <div class="input-field col s4" style="border-radius: 10px 0px 0px 10px;  min-width:120px; min-height:103px;">
-                  <center>
-                    <img src="Sedan.png" width="100px" height="60px">
-                  </center>
-                </div>
-                <div class="input-field col s7" style="border-radius: 0px 10px 10px 0px;">
-                    <p style="margin-left:10px;">Sedan 2-4 persons</p>
-                    <p style="margin-left:10px;">Rs.6000/=</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s4" style="border-radius: 10px 0px 0px 10px;  min-width:120px; min-height:103px;">
-                  <center>
-                    <img src="van.png" width="80px" height="60px">
-                  </center>
-                </div>
-                <div class="input-field col s7" style="border-radius: 0px 10px 10px 0px;">
-                    <p style="margin-left:10px;">Van 4-7 persons</p>
-                    <p style="margin-left:10px;">Rs.6000/=</p>
                 </div>
               </div>
             </div>
@@ -319,8 +271,8 @@
 
     ?>
     <script>
-    document.getElementById("nlocation").value = "<?php echo 'Location :-'.' '. $startlocation.' '. 'to'.' '.$endlocation; ?>";
-    document.getElementById("ndistance").value = "<?php echo 'Distance :-'.' '. $distance.' '.'Km'; ?>";
+    document.getElementById("nlocation").value = "<?php echo $startlocation.' '. 'to'.' '.$endlocation; ?>";
+    document.getElementById("ndistance").value = "<?php echo $distance.' '.'Km'; ?>";
     document.getElementById("nprice").value = "<?php echo 'Rs.'.' '. $price.' '.'/='; ?>";
     </script>
     <?php
