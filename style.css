@@ -1227,8 +1227,8 @@ input[type=submit]:focus {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   border-radius: 100%;
-  width: 45px;
-  height: 45px;
+  width: 100px;
+  height: 100px;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -1245,8 +1245,8 @@ input[type=submit]:focus {
 }
 @media screen and (max-width: 575px) {
   .to-top-icon {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     line-height: 25px;
     font-size: 13px;
     right: 10px;
