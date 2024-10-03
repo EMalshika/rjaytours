@@ -1227,8 +1227,8 @@ input[type=submit]:focus {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   border-radius: 100%;
-  width: 45px;
-  height: 45px;
+  width: 100px;
+  height: 100px;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -1240,7 +1240,6 @@ input[type=submit]:focus {
   transition: background-color 0.3s, color 0.3s;
 }
 .to-top-icon:hover {
-  background-color: #000000;
   color: #ffffff;
 }
 @media screen and (max-width: 575px) {
