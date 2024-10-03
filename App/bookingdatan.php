@@ -1,6 +1,10 @@
 <?php
     include "connection.php";
-    $price=0;
+    $id = $_GET["id"];
+    $res = mysqli_query($link, "SELECT * FROM `tour_booking` WHERE id='$id'");
+    while ($row = mysqli_fetch_array($res)) {
+      $nmobile = $row["whatsapp"];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en" class=" ">
@@ -123,93 +127,7 @@
           <div class="col s12 pad-0">
 
 
-
-            <form name="form1" action="" method="post">
-              <!-- select multiple -->
-              <div class="">
-
-                <div class="input-field sel-wrap sel-wrap col s12">
-                  <select name="start">
-                    <option>Choose Your Location</option>
-                    <option>Ahangama</option>
-                    <option>Anuradhapura</option>
-                    <option>Arugambay</option>
-                    <option>Benthota</option>
-                    <option>Colombo airport (BIA)</option>
-                    <option>Colombo</option>
-                    <option>Dambulla</option>
-                    <option>Dikwella</option>
-                    <option>Ella</option>
-                    <option>Galle</option>
-                    <option>Hikkaduwa</option>
-                    <option>Hiriketiya</option>
-                    <option>Kandy</option>
-                    <option>Mirissa</option>
-                    <option>Negambo</option>
-                    <option>Sigiriya</option>
-                    <option>Tangalle</option>
-                    <option>Trincomalee</option>
-                    <option>Udawalawa</option>
-                    <option>Unawatuna</option>
-                    <option>Weligama</option>
-                    <option>Yala</option>
-                  </select>
-                  <label>Select Start Location</label>
-                </div>
-
-
-
-              </div>
-
-
-              <!-- select with optgroups -->
-              <div class="">
-                <div class="input-field sel-wrap col s12">
-                  <select name="end">
-                    <option>Choose Your End Location</option>
-                    <option>Ahangama</option>
-                    <option>Anuradhapura</option>
-                    <option>Arugambay</option>
-                    <option>Benthota</option>
-                    <option>Colombo airport (BIA)</option>
-                    <option>Colombo</option>
-                    <option>Dambulla</option>
-                    <option>Dikwella</option>
-                    <option>Ella</option>
-                    <option>Galle</option>
-                    <option>Hikkaduwa</option>
-                    <option>Hiriketiya</option>
-                    <option>Kandy</option>
-                    <option>Mirissa</option>
-                    <option>Negambo</option>
-                    <option>Sigiriya</option>
-                    <option>Tangalle</option>
-                    <option>Trincomalee</option>
-                    <option>Udawalawa</option>
-                    <option>Unawatuna</option>
-                    <option>Weligama</option>
-                    <option>Yala</option>
-                  </select>
-                  <label>Select End Location</label>
-                </div>
-
-                <!-- select with optgroups -->
-                <!--<div class="input-field sel-wrap col s12">
-                  <select name="vehicle">
-                    <option>Choose Vehicle</option>
-                    <option>Flex car</option>
-                    <option>Sedan</option>
-                    <option>Van</option>
-                  </select>
-                  <label>Select Vehicle</label>
-                </div>-->
-
-              </div>
-
-              <button type="submit" name="submit1" class="btn btn-success">Calculate</button>
-            </form>
-
-            <form name="form2" action="" method="post">
+            <div>
 
               <div class="row">
                 <div class="input-field col s12">
@@ -294,13 +212,12 @@
 
               <div class="row">
                 <div class="input-field col s12">
-                  <input name="nmobile" id="nmobile" type="text" class="validate" required>
+                  <input name="nmobile" id="nmobile" type="text" value="<?php echo $nmobile ?>">
                   <label for="first_name1">Whatsapp No:</label>
                 </div>
               </div>
 
-              <button type="submit" name="submit2" class="btn btn-success">Send Your Inquiry</button>
-            </form>
+            </div>
 
           </div>
         </div>
@@ -425,3 +342,4 @@
 </body>
 
 </html>
+

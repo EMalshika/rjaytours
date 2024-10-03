@@ -389,9 +389,6 @@ h6 {
   h6 {
     font-size: 12px;
   }
-  .tripa1{
-    margin-bottom: -50px;
-  }
 }
 /*--------------------------------------------------------------
 # Lists
@@ -1118,7 +1115,7 @@ input[type=submit]:focus {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 150px;
+  width: 70px;
 }
 
 .social-links ul {
@@ -1230,8 +1227,8 @@ input[type=submit]:focus {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  width: 45px;
+  height: 45px;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -1242,14 +1239,14 @@ input[type=submit]:focus {
   -o-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
-/*.to-top-icon:hover {
+.to-top-icon:hover {
   background-color: #000000;
   color: #ffffff;
-}*/
+}
 @media screen and (max-width: 575px) {
   .to-top-icon {
-    width: 100px;
-    height: 100px;
+    width: 25px;
+    height: 25px;
     line-height: 25px;
     font-size: 13px;
     right: 10px;
@@ -8472,11 +8469,4 @@ product checkout css
 }
 .tripa .widWRLLink{
   display: none;
-}
-.appsec{
-  width: 100%;
-  height: 100%;
-}
-.destination-section{
-  margin-top: -40px;
 }
