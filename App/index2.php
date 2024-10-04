@@ -298,6 +298,20 @@
                   <label for="first_name1">Whatsapp No:</label>
                 </div>
               </div>
+              
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="ndate" id="ndate" type="date" class="validate" required>
+                  <label for="first_name1">Date:</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="ntime" id="ntime" type="time" class="validate" required>
+                  <label for="first_name1">Time:</label>
+                </div>
+              </div>
 
               <button type="submit" name="submit2" class="btn btn-success">Send Your Inquiry</button>
             </form>
@@ -327,7 +341,7 @@
 
     ?>
     <script>
-    document.getElementById("nlocation").value = "<?php echo 'Location :-'.' '. $startlocation.' '. 'to'.' '.$endlocation; ?>";
+    document.getElementById("nlocation").value = "<?php echo /*'Location :-'.' '. */$startlocation.' '. 'to'.' '.$endlocation; ?>";
     document.getElementById("ndistance").value = "<?php echo /*'Distance :-'.' '. */$distance/*.' '.'Km'*/; ?>";
     document.getElementById("flexprice").innerHTML = "<?php echo 'Rs.'.' '. $flexprice.' '.'/='; ?>";
     document.getElementById("sedanprice").innerHTML = "<?php echo 'Rs.'.' '. $sedanprice.' '.'/='; ?>";
@@ -343,6 +357,9 @@
     $ndistance = $_POST["ndistance"];
     $nvehicle = $_POST["nvehicle"];
     $nmobile = $_POST["nmobile"];
+    $ndate = $_POST["ndate"];
+    $ntime = $_POST["ntime"];
+    
     if ($nvehicle == "Flex") {
       $nprice = $ndistance * 125;
     }
@@ -353,15 +370,15 @@
       $nprice = $ndistance * 200;
     }
 
-    mysqli_query($link, "INSERT INTO `tour_booking`(`id`, `nlocation`, `ndistance`, `nvehicle`, `nprice`, `whatsapp`) 
-    VALUES (NULL,'$nlocation','$ndistance','$nvehicle','$nprice','$nmobile')");
+    mysqli_query($link, "INSERT INTO `tour_booking`(`id`, `nlocation`, `ndistance`, `nvehicle`, `nprice`, `whatsapp`, `date`, `time`) 
+    VALUES (NULL,'$nlocation','$ndistance','$nvehicle','$nprice','$nmobile','$ndate','$ntime')");
 
     $res = mysqli_query($link, "SELECT * FROM `tour_booking`");
     while ($row = mysqli_fetch_array($res)) {
       $nid = $row["id"];
     }
-    $subject = "Tour Booking";
-    $linkn = "https://rjaytours.com/app/bookingdata.php?=$nid";
+    $subject = "$nmobile Tour Booking";
+    $linkn = "https://rjaytours.com/app/bookingdata.php?id=$nid";
     $to = "info@webtwozero.com";
     mail($to,$subject,$linkn);
   }

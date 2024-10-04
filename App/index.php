@@ -696,7 +696,7 @@
 
 
 
-            <form action="" method="post">
+            <form name="form1" action="" method="post">
               <!-- select multiple -->
               <div class="">
 
@@ -707,7 +707,7 @@
                     <option>Anuradhapura</option>
                     <option>Arugambay</option>
                     <option>Benthota</option>
-                    <option>BIA</option>
+                    <option>Colombo airport (BIA)</option>
                     <option>Colombo</option>
                     <option>Dambulla</option>
                     <option>Dikwella</option>
@@ -743,7 +743,7 @@
                     <option>Anuradhapura</option>
                     <option>Arugambay</option>
                     <option>Benthota</option>
-                    <option>BIA</option>
+                    <option>Colombo airport (BIA)</option>
                     <option>Colombo</option>
                     <option>Dambulla</option>
                     <option>Dikwella</option>
@@ -766,7 +766,7 @@
                 </div>
 
                 <!-- select with optgroups -->
-                <div class="input-field sel-wrap col s12">
+                <!--<div class="input-field sel-wrap col s12">
                   <select name="vehicle">
                     <option>Choose Vehicle</option>
                     <option>Flex car</option>
@@ -774,29 +774,119 @@
                     <option>Van</option>
                   </select>
                   <label>Select Vehicle</label>
-                </div>
+                </div>-->
 
               </div>
 
               <button type="submit" name="submit1" class="btn btn-success">Calculate</button>
             </form>
 
-            <div class="pad-15">
+            <form name="form2" action="" method="post">
 
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="ndistance" type="text" class="validate">
-                  <label for="first_name1">Distance</label>
+                  <input name="nlocation" id="nlocation" type="text" class="validate">
+                  <label for="first_name1">Location</label>
+                  <!--<p id="nlocation"></p>-->
                 </div>
               </div>
 
               <div class="row">
+                <div class="input-field col s12">
+                  <input name="ndistance" id="ndistance" type="text" class="validate">
+                  <label for="first_name1">Distance (Km)</label>
+                </div>
+                <!--<p id="ndistance"></p>-->
+              </div>
+
+              <!--<div class="row">
                 <div class="input-field col s12">
                   <input id="nprice" type="text" class="validate">
                   <label for="first_name1">Price</label>
                 </div>
+              </div>-->
+
+              <div class="row">
+                <div class="input-field col s4" style="border-radius: 10px 0px 0px 10px;  min-width:120px; min-height:103px;">
+                  <center>
+                    <img src="flexcar.png" width="80px" height="60px">
+                  </center>
+                </div>
+                <div class="input-field col s7" style="border-radius: 0px 10px 10px 0px;">
+                    <p style="margin-left:10px;">Flex 2-3 persons</p>
+                    <p style="margin-left:10px;" name="flexprice" id="flexprice">Rs.0/=</p>
+                </div>
+                <!--<div class="input-field col s4">
+                  <center>
+                    <img src="flexcar.png" width="80px" height="60px">
+                    <p>Sedan 2-4 persons</p>
+                  </center>
+                </div>
+                <div class="input-field col s4">
+                  <center>
+                    <img src="flexcar.png" width="80px" height="60px">
+                    <p>Van 4-7 persons</p>
+                  </center>
+                </div>-->
               </div>
-            </div>
+              <div class="row">
+                <div class="input-field col s4" style="border-radius: 10px 0px 0px 10px;  min-width:120px; min-height:103px;">
+                  <center>
+                    <img src="Sedan.png" width="100px" height="60px">
+                  </center>
+                </div>
+                <div class="input-field col s7" style="border-radius: 0px 10px 10px 0px;">
+                    <p style="margin-left:10px;">Sedan 2-4 persons</p>
+                    <p style="margin-left:10px;" name="sedanprice" id="sedanprice">Rs.0/=</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s4" style="border-radius: 10px 0px 0px 10px;  min-width:120px; min-height:103px;">
+                  <center>
+                    <img src="van.png" width="80px" height="60px">
+                  </center>
+                </div>
+                <div class="input-field col s7" style="border-radius: 0px 10px 10px 0px;">
+                    <p style="margin-left:10px;">Van 4-7 persons</p>
+                    <p style="margin-left:10px;" name="vanprice" id="vanprice">Rs.0/=</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <select name="nvehicle">
+                    <option>Select Your Vehicle</option>
+                    <option>Flex</option>
+                    <option>Sedan</option>
+                    <option>Van</option>
+                  </select>
+                  <label for="first_name1">Select Vehicle</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="nmobile" id="nmobile" type="text" class="validate" required>
+                  <label for="first_name1">Whatsapp No:</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="ndate" id="ndate" type="date" class="validate" required>
+                  <label for="first_name1">Date:</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="ntime" id="ntime" type="time" class="validate" required>
+                  <label for="first_name1">Time:</label>
+                </div>
+              </div>
+
+              <button type="submit" name="submit2" class="btn btn-success">Send Your Inquiry</button>
+            </form>
 
           </div>
         </div>
@@ -805,48 +895,63 @@
       </div>
     </div>
 
-
-<?php
+    <?php
   if (isset($_POST["submit1"]))
   {
     $startlocation = $_POST["start"];
     $endlocation = $_POST["end"];
-    $vehicle = $_POST["vehicle"];
-
-    /*?>
-    <script>alert("<?php echo $vehicle; ?>");</script>
-    <?php*/
 
     $res = mysqli_query($link, "select * from distance where start='$startlocation' && end='$endlocation'");
     while ($row = mysqli_fetch_array($res)) {
       $distance = $row["distance"];
     }
 
-    if ($vehicle == "Flex car") {
-      $price = $distance * 125;
-    }elseif ($vehicle == "Sedan") {
-      $price = $distance * 150;
-    }elseif ($vehicle == "Van") {
-      $price = $distance * 200;
-    }
-
-    /*?>
-    <script>alert("<?php echo $price; ?>");</script>
-    <?php*/
+    $flexprice = $distance * 125;
+    $sedanprice = $distance * 150;
+    $vanprice = $distance * 200;
 
     ?>
     <script>
-    document.getElementById("ndistance").value = "<?php echo $distance.' '.'Km'; ?>";
-    document.getElementById("nprice").value = "<?php echo 'Rs.'.' '. $price.' '.'/='; ?>";
+    document.getElementById("nlocation").value = "<?php echo /*'Location :-'.' '. */$startlocation.' '. 'to'.' '.$endlocation; ?>";
+    document.getElementById("ndistance").value = "<?php echo /*'Distance :-'.' '. */$distance/*.' '.'Km'*/; ?>";
+    document.getElementById("flexprice").innerHTML = "<?php echo 'Rs.'.' '. $flexprice.' '.'/='; ?>";
+    document.getElementById("sedanprice").innerHTML = "<?php echo 'Rs.'.' '. $sedanprice.' '.'/='; ?>";
+    document.getElementById("vanprice").innerHTML = "<?php echo 'Rs.'.' '. $vanprice.' '.'/='; ?>";
     </script>
     <?php
 
-    /*?>
-    <script>alert("<?php echo $price; ?>");</script>
-    <?php*/
+  }
 
+  if (isset($_POST["submit2"]))
+  {
+    $nlocation = $_POST["nlocation"];
+    $ndistance = $_POST["ndistance"];
+    $nvehicle = $_POST["nvehicle"];
+    $nmobile = $_POST["nmobile"];
+    $ndate = $_POST["ndate"];
+    $ntime = $_POST["ntime"];
+    
+    if ($nvehicle == "Flex") {
+      $nprice = $ndistance * 125;
+    }
+    elseif ($nvehicle == "Sedan") {
+      $nprice = $ndistance * 150;
+    }
+    else{
+      $nprice = $ndistance * 200;
+    }
 
+    mysqli_query($link, "INSERT INTO `tour_booking`(`id`, `nlocation`, `ndistance`, `nvehicle`, `nprice`, `whatsapp`, `date`, `time`) 
+    VALUES (NULL,'$nlocation','$ndistance','$nvehicle','$nprice','$nmobile','$ndate','$ntime')");
 
+    $res = mysqli_query($link, "SELECT * FROM `tour_booking`");
+    while ($row = mysqli_fetch_array($res)) {
+      $nid = $row["id"];
+    }
+    $subject = "$nmobile Tour Booking";
+    $linkn = "https://rjaytours.com/app/bookingdata.php?id=$nid";
+    $to = "info@webtwozero.com";
+    mail($to,$subject,$linkn);
   }
 ?>
 
